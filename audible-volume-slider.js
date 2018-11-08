@@ -17,7 +17,7 @@ void function usAddVolumeSlider() {
     input.setAttribute("value", "100")
     input.setAttribute("id", "usAudibleVolumeSlider")
     input.oninput = () => unsafeWindow.player.volume = input.value * 0.01
-    //input.setAttribute("style", "") //style this later maybe
+    input.setAttribute("style", "-webkit-appearance: none")
     return input
   }
   
